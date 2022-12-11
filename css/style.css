@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrapper {
+    width:1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+   }
+
+   .grid_areas {
+    display: grid;
+    grid-template-columns: 340px repeat(4,275px);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "a a a a a"
+    "b c c g h"
+    "b d d g h"
+    "b e f i i"
+    "b e f j j";
+   }
+
+
+    .area_a{
+    grid-area: a;
+    }
+
+    .area_b{
+        grid-area: b;
+     
+    }
+
+    .area_c{
+        grid-area: c;
+   
+    }
+
+    .area_d{
+        grid-area: d;
+    }
+
+    .area_e{
+        grid-area: e;
+        position: relative;
+    }
+
+    .area_f{
+        grid-area: f;
+        position: relative;
+
+    }
+
+    .area_g{
+        grid-area: g;
+        position: relative;
+    }
+
+    .area_h{
+        grid-area: h;
+        position: relative;
+    }
+    .area_i{
+        grid-area: i;
+    }
+    .area_j{
+        grid-area: j;
+    }
+ .navigation {
+    width:1440px;
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 70px;
+    display: inline-flex;
+    align-items: center;
+ }
+
+
+ .logo {
+    background:url("../images/logo.png") no-repeat;
+    width:93px;
+    height:44px;
+   margin-left: 30px;
+    margin-right: 100px;
+ }
+.navigation li {
+  
+    font-size: 21px;
+
+    font-weight: 600;
+   
+}
+
+.sidebar {
+    margin-left: 30px;
+
+    font-size: 22px;
+}
+.sidebar li{
+ padding-bottom:30px;
+
+
+}
+.frame {
+    padding-right:42px
+}
+
+.frame:hover {
+    text-decoration: underline solid 2px;
+    text-underline-offset: 10px;
+    cursor: pointer;
+}
+
+.navigation li:nth-child(3) {
+padding-left: 200px;
+}
+
+form {
+    width:350px;
+   
+   
+}
+
+.basket {
+    width:24px;
+    height:24px;
+    background:url(../images/basket.png) no-repeat;
+
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.person {
+    width:24px;
+    height:24px;
+    background:url(../images/person.png) no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+input {
+     border:none;
+     display:inline-block;
+     opacity: 20%;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 22px;
+}
+
+.search_icon {
+    display:inline-block;
+    background:  url("../images/search.png") no-repeat;
+    background-position:center;
+    width:24px;
+    height: 24px;
+    margin-right: 17px;
+}
+
+.sidebar :first-child {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.sidebar :first-child:hover {
+    cursor: auto;
+}
+.sidebar li:hover {
+    text-decoration: underline solid 2px;
+    text-underline-offset: 10px;
+    cursor: pointer;
+}
+
+
+.area_d img {
+    width:539px;
+    border-radius: 15px;
+    }
+
+.area_i img {
+    width:539px;
+    border-radius: 15px;
+        }
+
+.area_j img {
+    width:539px;
+    border-radius: 15px;
+            }
+
+
+ .area_c{
+ border-radius: 15px;
+ width: 539px;
+ }
+
+            img {
+                border-radius: 15px;
+            }
+
+
+.heart {
+position: absolute;
+left:200px;
+top:20px;
+background:white url('../images/heart.png') no-repeat;
+background-position: center;
+width:38px;
+height: 38px;
+text-align: center;
+border-radius:50%;
+cursor: pointer;
+    }
+
+
+.heart:hover {
+
+top:10px;
+left:200px;
+background:pink url('../images/heart.png') no-repeat;
+background-position: center;
+            }
+
+
+
+.sidebar :nth-child(2) div {
+   
+    background: url('../images/css_sprites.png') -27px -0;
+ 
+}
+
+.sidebar :nth-child(3) div {
+    background: url('../images/css_sprites.png') -0 -28px;
+   
+}
+
+
+.sidebar :nth-child(4) div {
+    background: url('../images/css_sprites.png') -0 -50px;
+   
+
+}
+
+.sidebar :nth-child(5) div {
+    background: url('../images/css_sprites.png') -50px -21px;
+   
+}
+
+
+.sidebar :nth-child(6) div {
+    background: url('../images/css_sprites.png') -50px 0;
+   
+}
+
+.sidebar :nth-child(7) div {
+    background: url('../images/css_sprites.png') -22px -28px;
+   
+}
+
+.sidebar :nth-child(8) div {
+    background: url('../images/css_sprites.png') -0 -0;
+   
+
+
+}
+
+.sidebar li :first-child {
+    display:inline-flex;
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 21px; height: 21px;
+}
+
+.sidebar .help {
+margin-top: 300px;
+ text-align: center;
+ align-items:center;
+ display: inline-flex;
+
+}
+
+
+.sidebar .help div {
+background:white url('../images/help.png') no-repeat;
+width:50px;
+height:50px;
+align-items:center;
+}
+
